@@ -1,0 +1,26 @@
+% Encoding: UTF-8
+
+@Electronic{Desconocidos2006-2018,
+  author       = {Desconocidos},
+  year         = {2006-2018},
+  language     = {Español},
+  howpublished = {Como blogs, conceptos},
+  organization = {Multiples},
+  url          = {https://es.wikipedia.org/wiki/Inversor_trif%C3%A1sico
+http://profesores.elo.utfsm.cl/~mpl/wp-content/uploads/2016/08/elo381_capitulo_03_rectificadores.pdf
+http://e-ducativa.catedu.es/44700165/aula/archivos/repositorio/3000/3079/html/431_rectificador_trifsico_de_media_onda.html
+https://www.monografias.com/docs113/transformacion-trifasica/transformacion-trifasica.shtml
+https://www.ecured.cu/Conexiones_en_sistemas_trif%C3%A1sicos_de_corriente_alterna#Conexi.C3.B3n_en_tri.C3.A1ngulo_o_delta_.28.CE.94.29
+https://calculosolar.com/curso/5.4_teoria.html
+https://alexdl8.wordpress.com/2008/10/10/senales-portadoras-y-moduladoras/
+http://ingenieroandreotti.blogspot.com/2017/11/inversores-multinivel.html
+https://es.wikipedia.org/wiki/Variador_de_frecuencia
+https://books.google.com.mx/books?id=Yf7WaWvhFZUC&pg=PA302&lpg=PA302&dq=estructuras+basicas+sin+aislamiento+CC-CC&source=bl&ots=fpyqKsddRM&sig=ACfU3U2Hdq78aSgcG4Z9OdoL7_nU267jNA&hl=es-419&sa=X&ved=2ahUKEwiBkqyVrdnkAhUBd6wKHcMhD7QQ6AEwCnoECAgQAQ#v=onepage&q=estructuras%20basicas%20sin%20aislamiento%20CC-CC&f=false
+https://www.diarioelectronicohoy.com/blog/aislamiento-galvanico
+https://es.wikipedia.org/wiki/Convertidor_DC_a_DC
+https://automantenimiento.net/electricidad/aplicaciones-de-los-convertidores-dcdc/
+http://lep.eie.pucv.cl/TesisOrteguita.pdf
+https://prezi.com/9hjy0ecwmi_8/convertidor-reductorelevador-buck-boost/},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
