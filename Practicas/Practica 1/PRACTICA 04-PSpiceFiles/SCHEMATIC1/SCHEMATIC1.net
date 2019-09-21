@@ -1,0 +1,9 @@
+* source PRACTICA 04
+V_V1         N02808 0  AC 0
++SIN 0 311 50 0 0 0
+C_C1         0 N02842  1mF  TC=0,0 
+R_R2         N03007 N02842  100 TC=0,0 
+D_D1         N02828 N02842 Dbreak 
+D_D2         0 N02828 Dbreak 
+L_L1         N02808 N02828  1mH  
+C_C2         0 N03007  1mF  TC=0,0 

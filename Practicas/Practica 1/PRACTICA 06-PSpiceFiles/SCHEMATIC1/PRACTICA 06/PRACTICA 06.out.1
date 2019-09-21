@@ -1,0 +1,316 @@
+
+**** 09/13/19 13:22:12 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 06"  [ C:\PRACTICAS\PRACTICA 06-PSpiceFiles\SCHEMATIC1\PRACTICA 06.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PRACTICA 06.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 50s 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PRACTICA 06
+V_V1         N00448 N00506  AC 0
++SIN 0 380 50 0 0 1
+V_V2         N00448 N00520  AC 0
++SIN 0 380 50 0 0 1
+V_V3         N00448 N00492  AC 0
++SIN 0 380 50 0 0 1
+R_R1         N00534 N03501  1m TC=0,0 
+R_R2         N00548 N03515  1m TC=0,0 
+R_R3         N00562 N03529  1m TC=0,0 
+R_R4         N03686 N03612  20m TC=0,0 
+C_C1         0 N03686  1mF  TC=0,0 
+R_R5         0 N03612  20 TC=0,0 
+D_D1         N03501 N03612 Dbreak 
+D_D3         N03529 N03612 Dbreak 
+D_D4         N03515 N03612 Dbreak 
+D_D5         0 N03501 Dbreak 
+D_D6         0 N03515 Dbreak 
+D_D7         0 N03529 Dbreak 
+L_L1         N00520 N00534  1mH  
+L_L2         N00506 N00548  1mH  
+L_L3         N00492 N00562  1mH  
+
+**** RESUMING "PRACTICA 06.cir" ****
+.END
+
+**** 09/13/19 13:22:12 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 06"  [ C:\PRACTICAS\PRACTICA 06-PSpiceFiles\SCHEMATIC1\PRACTICA 06.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00448)    1.7171 (N00492) 719.6E-06 (N00506) 719.6E-06 (N00520) 719.6E-06     
+
+(N00534) 719.6E-06 (N00548) 719.6E-06 (N00562) 719.6E-06 (N03501) 719.6E-06     
+
+(N03515) 719.6E-06 (N03529) 719.6E-06 (N03612) 60.08E-15 (N03686) 60.08E-15 
+
+
+  These voltages failed to converge:
+
+    V(N00506)                 =   469.51uV  \   719.60uV
+    V(N00520)                 =   469.51uV  \   719.60uV
+    V(N00492)                 =   469.51uV  \   719.60uV
+    V(N00534)                 =   469.51uV  \   719.60uV
+    V(N03501)                 =   469.51uV  \   719.60uV
+    V(N00548)                 =   469.51uV  \   719.60uV
+    V(N03515)                 =   469.51uV  \   719.60uV
+    V(N00562)                 =   469.51uV  \   719.60uV
+    V(N03529)                 =   469.51uV  \   719.60uV
+
+Try running with .OPTION STEPGMIN
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 0.1
+**** Param: TMAX = 50
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 10
+
+ **** Published Runtime Parameters *****************************
+                                                               
+                                       ABSTOL =      1.0000E-12
+                                      C_C1.ic =      0.0000E+00
+                                   C_C1.value =      1.0000E-03
+                                    D_D1.area =      1.0000E+00
+                                      D_D1.ic =      0.0000E+00
+                                    D_D3.area =      1.0000E+00
+                                      D_D3.ic =      0.0000E+00
+                                    D_D4.area =      1.0000E+00
+                                      D_D4.ic =      0.0000E+00
+                                    D_D5.area =      1.0000E+00
+                                      D_D5.ic =      0.0000E+00
+                                    D_D6.area =      1.0000E+00
+                                      D_D6.ic =      0.0000E+00
+                                    D_D7.area =      1.0000E+00
+                                      D_D7.ic =      0.0000E+00
+                                         GMIN =      1.0000E-12
+                                         ITL1 =      1.5000E+02
+                                         ITL2 =      2.0000E+01
+                                         ITL4 =      1.0000E+01
+                                      L_L1.ic =      0.0000E+00
+                                 L_L1.lgap.ic =      0.0000E+00
+                              L_L1.lgap.value =      0.0000E+00
+                                   L_L1.value =      1.0000E-03
+                                      L_L2.ic =      0.0000E+00
+                                 L_L2.lgap.ic =      0.0000E+00
+                              L_L2.lgap.value =      0.0000E+00
+                                   L_L2.value =      1.0000E-03
+                                      L_L3.ic =      0.0000E+00
+                                 L_L3.lgap.ic =      0.0000E+00
+                              L_L3.lgap.value =      0.0000E+00
+                                   L_L3.value =      1.0000E-03
+                                     R_R1.tc1 =      0.0000E+00
+                                     R_R1.tc2 =      0.0000E+00
+                                   R_R1.value =      1.0000E-03
+                                     R_R2.tc1 =      0.0000E+00
+                                     R_R2.tc2 =      0.0000E+00
+                                   R_R2.value =      1.0000E-03
+                                     R_R3.tc1 =      0.0000E+00
+                                     R_R3.tc2 =      0.0000E+00
+                                   R_R3.value =      1.0000E-03
+                                     R_R4.tc1 =      0.0000E+00
+                                     R_R4.tc2 =      0.0000E+00
+                                   R_R4.value =      2.0000E-02
+                                     R_R5.tc1 =      0.0000E+00
+                                     R_R5.tc2 =      0.0000E+00
+                                   R_R5.value =      2.0000E+01
+                                       RELTOL =      1.0000E-03
+                                       RUNFOR =      0.0000E+00
+                                         TMAX =      5.0000E+01
+                                        TSTOP =      1.0000E-01
+                                      V_V1.ac =      0.0000E+00
+                                 V_V1.acphase =      0.0000E+00
+                                      V_V1.dc =      0.0000E+00
+                                      V_V2.ac =      0.0000E+00
+                                 V_V2.acphase =      0.0000E+00
+                                      V_V2.dc =      0.0000E+00
+                                      V_V3.ac =      0.0000E+00
+                                 V_V3.acphase =      0.0000E+00
+                                      V_V3.dc =      0.0000E+00
+                                        VNTOL =      1.0000E-06
+                                               
+               
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00448)    1.7171 (N00492) 719.6E-06 (N00506) 719.6E-06 (N00520) 719.6E-06     
+
+(N00534) 719.6E-06 (N00548) 719.6E-06 (N00562) 719.6E-06 (N03501) 719.6E-06     
+
+(N03515) 719.6E-06 (N03529) 719.6E-06 (N03612) 60.08E-15 (N03686) 60.08E-15 
+
+
+  These voltages failed to converge:
+
+    V(N00506)                 =   469.51uV  \   719.60uV
+    V(N00520)                 =   469.51uV  \   719.60uV
+    V(N00492)                 =   469.51uV  \   719.60uV
+    V(N00534)                 =   469.51uV  \   719.60uV
+    V(N03501)                 =   469.51uV  \   719.60uV
+    V(N00548)                 =   469.51uV  \   719.60uV
+    V(N03515)                 =   469.51uV  \   719.60uV
+    V(N00562)                 =   469.51uV  \   719.60uV
+    V(N03529)                 =   469.51uV  \   719.60uV
+
+Try running with .OPTION STEPGMIN
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 0.1
+**** Param: TMAX = 50
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 10
+
+ **** Published Runtime Parameters *****************************
+                                                               
+                                       ABSTOL =      1.0000E-12
+                                      C_C1.ic =      0.0000E+00
+                                   C_C1.value =      1.0000E-03
+                                    D_D1.area =      1.0000E+00
+                                      D_D1.ic =      0.0000E+00
+                                    D_D3.area =      1.0000E+00
+                                      D_D3.ic =      0.0000E+00
+                                    D_D4.area =      1.0000E+00
+                                      D_D4.ic =      0.0000E+00
+                                    D_D5.area =      1.0000E+00
+                                      D_D5.ic =      0.0000E+00
+                                    D_D6.area =      1.0000E+00
+                                      D_D6.ic =      0.0000E+00
+                                    D_D7.area =      1.0000E+00
+                                      D_D7.ic =      0.0000E+00
+                                         GMIN =      1.0000E-12
+                                         ITL1 =      1.5000E+02
+                                         ITL2 =      2.0000E+01
+                                         ITL4 =      1.0000E+01
+                                      L_L1.ic =      0.0000E+00
+                                 L_L1.lgap.ic =      0.0000E+00
+                              L_L1.lgap.value =      0.0000E+00
+                                   L_L1.value =      1.0000E-03
+                                      L_L2.ic =      0.0000E+00
+                                 L_L2.lgap.ic =      0.0000E+00
+                              L_L2.lgap.value =      0.0000E+00
+                                   L_L2.value =      1.0000E-03
+                                      L_L3.ic =      0.0000E+00
+                                 L_L3.lgap.ic =      0.0000E+00
+                              L_L3.lgap.value =      0.0000E+00
+                                   L_L3.value =      1.0000E-03
+                                     R_R1.tc1 =      0.0000E+00
+                                     R_R1.tc2 =      0.0000E+00
+                                   R_R1.value =      1.0000E-03
+                                     R_R2.tc1 =      0.0000E+00
+                                     R_R2.tc2 =      0.0000E+00
+                                   R_R2.value =      1.0000E-03
+                                     R_R3.tc1 =      0.0000E+00
+                                     R_R3.tc2 =      0.0000E+00
+                                   R_R3.value =      1.0000E-03
+                                     R_R4.tc1 =      0.0000E+00
+                                     R_R4.tc2 =      0.0000E+00
+                                   R_R4.value =      2.0000E-02
+                                     R_R5.tc1 =      0.0000E+00
+                                     R_R5.tc2 =      0.0000E+00
+                                   R_R5.value =      2.0000E+01
+                                       RELTOL =      1.0000E-03
+                                       RUNFOR =      0.0000E+00
+                                         TMAX =      5.0000E+01
+                                        TSTOP =      1.0000E-01
+                                      V_V1.ac =      0.0000E+00
+                                 V_V1.acphase =      0.0000E+00
+                                      V_V1.dc =      0.0000E+00
+                                      V_V2.ac =      0.0000E+00
+                                 V_V2.acphase =      0.0000E+00
+                                      V_V2.dc =      0.0000E+00
+                                      V_V3.ac =      0.0000E+00
+                                 V_V3.acphase =      0.0000E+00
+                                      V_V3.dc =      0.0000E+00
+                                        VNTOL =      1.0000E-06
+                                               
+               
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00448)    1.7171 (N00492) 719.6E-06 (N00506) 719.6E-06 (N00520) 719.6E-06     
+
+(N00534) 719.6E-06 (N00548) 719.6E-06 (N00562) 719.6E-06 (N03501) 719.6E-06     
+
+(N03515) 719.6E-06 (N03529) 719.6E-06 (N03612) 60.08E-15 (N03686) 60.08E-15 
+
+
+  These voltages failed to converge:
+
+    V(N00506)                 =   469.51uV  \   719.60uV
+    V(N00520)                 =   469.51uV  \   719.60uV
+    V(N00492)                 =   469.51uV  \   719.60uV
+    V(N00534)                 =   469.51uV  \   719.60uV
+    V(N03501)                 =   469.51uV  \   719.60uV
+    V(N00548)                 =   469.51uV  \   719.60uV
+    V(N03515)                 =   469.51uV  \   719.60uV
+    V(N00562)                 =   469.51uV  \   719.60uV
+    V(N03529)                 =   469.51uV  \   719.60uV
+
+Try running with .OPTION STEPGMIN
+
+**** Interrupt ****

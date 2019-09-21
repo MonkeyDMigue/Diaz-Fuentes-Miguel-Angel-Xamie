@@ -1,0 +1,22 @@
+* source PRACTICA 06
+V_V1         N05870 N06132  AC 0
++SIN 0 380 50 0 0 1
+V_V2         N05915 N06132  AC 0
++SIN 0 380 50 0 0 2
+V_V3         N05929 N06132  AC 0
++SIN 0 380 50 0 0 3
+L_L1         N05870 N05943  1mH  
+L_L2         N05915 N05957  1mH  
+L_L3         N05929 N05971  1mH  
+R_R1         N05943 N06090 1m
+R_R2         N05957 N06104 1m
+R_R3         N05971 N06118 1m
+D_D1         N06090 N06341 Dbreak 
+D_D2         N06104 N06341 Dbreak 
+D_D3         N06118 N06341 Dbreak 
+D_D4         0 N06090 Dbreak 
+D_D5         0 N06104 Dbreak 
+D_D6         0 N06118 Dbreak 
+R_20m         N06327 N06341 20m
+R_R5         0 N06341 20
+C_C1         0 N06327  1mF  TC=0,0 

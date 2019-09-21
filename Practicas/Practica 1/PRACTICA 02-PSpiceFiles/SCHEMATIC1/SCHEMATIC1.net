@@ -1,0 +1,6 @@
+* source PRACTICA 02
+V_V1         N00171 0  AC 0
++SIN 0 311 50 0 0 0
+L_L1         N00191 N00205 Lbreak 10mH 
+D_D1         N00171 N00191 Dbreak 
+V_V2         N00205 0 150

@@ -1,0 +1,6 @@
+* source INTENTO2
+V_V1         N00427 0  AC 0
++SIN 0 311 50 0 0 0
+D_D1         N00427 N00446 Dbreak 
+L_L1         N00446 N00187 Lbreak 10mH 
+R_R1         0 N00187  10 TC=0,0 

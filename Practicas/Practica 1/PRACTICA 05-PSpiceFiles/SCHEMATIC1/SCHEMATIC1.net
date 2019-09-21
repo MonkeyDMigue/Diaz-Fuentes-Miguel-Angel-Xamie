@@ -1,0 +1,32 @@
+* source PRACTICA 05
+D_D1         N00366 N00281 Dbreak 
+D_D2         N00380 N00281 Dbreak 
+D_D3         N00394 N00366 Dbreak 
+D_D4         N00394 N00380 Dbreak 
+C_C1         N00394 N00281  1mF  TC=0,0 
+R_R1         N00394 0 10m
+R_R2         N00394 N00281 10
+L_L1         N03129 N00366  1mH  
+L_L2         N03109 N01036  1mH  
+D_D5         N01036 N00992 Dbreak 
+D_D6         N01048 N00992 Dbreak 
+C_C2         N01060 N00992  1mF  TC=0,0 
+R_R3         N01060 0 10m
+R_R4         N01060 N00992 10
+D_D8         N01060 N01048 Dbreak 
+D_D7         N01060 N01036 Dbreak 
+D_D11         N01720 N01696 Dbreak 
+C_C3         N01720 N01652  1mF  TC=0,0 
+D_D12         N01720 N00380 Dbreak 
+D_D9         N01696 N01652 Dbreak 
+L_L3         N03074 N01696  1mH  
+D_D10         N00380 N01652 Dbreak 
+R_R5         N01720 0 10m
+R_R6         N01720 N01652 10
+V_V1         N03129 0  AC 0
++SIN 0 380 60 0 0 0
+V_V2         N03109 0  AC 0
++SIN 0 110 60 0 0 0
+V_V3         N03074 0  AC 0
++SIN 0 220 60 0 0 0
+R_R7         0 N00380  1m TC=0,0 

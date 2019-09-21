@@ -1,0 +1,112 @@
+
+**** 09/18/19 23:22:20 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 03"  [ C:\PRACTICAS\practica 03-pspicefiles\schematic1\practica 03.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PRACTICA 03.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 50u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PRACTICA 03
+V_V1         N00302 N00350  AC 0
++SIN 0 311 50 0 0 0
+L_L1         N00302 N00322  1mF  
+R_R2         0 N00381 10
+R_R3         N00336 N00322 10m
+D_D2         N00336 N00381 Dbreak 
+D_D3         0 N00336 Dbreak 
+D_D4         0 N00350 Dbreak 
+D_D5         N00350 N00381 Dbreak 
+C_C1         0 N00381  1mF  TC=0,0 
+
+**** RESUMING "PRACTICA 03.cir" ****
+.END
+
+**** 09/18/19 23:22:20 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 03"  [ C:\PRACTICAS\practica 03-pspicefiles\schematic1\practica 03.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+**** 09/18/19 23:22:20 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 03"  [ C:\PRACTICAS\practica 03-pspicefiles\schematic1\practica 03.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00302)-21.77E-24 (N00322)-21.77E-24 (N00336)-21.77E-24 (N00350)-21.77E-24     
+
+(N00381)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/18/19 23:22:20 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 03"  [ C:\PRACTICAS\practica 03-pspicefiles\schematic1\practica 03.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.48
+

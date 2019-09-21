@@ -1,0 +1,123 @@
+
+**** 09/18/19 23:19:11 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 02"  [ C:\PRACTICAS\practica 02-pspicefiles\schematic1\practica 02.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PRACTICA 02.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 40m 0 50u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PRACTICA 02
+V_V1         N00171 0  AC 0
++SIN 0 311 50 0 0 0
+L_L1         N00191 N00205 Lbreak 10mH 
+D_D1         N00171 N00191 Dbreak 
+V_V2         N00205 0 150
+
+**** RESUMING "PRACTICA 02.cir" ****
+.END
+
+**** 09/18/19 23:19:11 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 02"  [ C:\PRACTICAS\practica 02-pspicefiles\schematic1\practica 02.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+**** 09/18/19 23:19:11 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 02"  [ C:\PRACTICAS\practica 02-pspicefiles\schematic1\practica 02.sim ] 
+
+
+ ****     Inductor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Lbreak          
+           L    1            
+
+
+**** 09/18/19 23:19:11 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 02"  [ C:\PRACTICAS\practica 02-pspicefiles\schematic1\practica 02.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00171)    0.0000 (N00191)  150.0000 (N00205)  150.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.500E-10
+    V_V2        -1.500E-10
+
+    TOTAL POWER DISSIPATION   2.25E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/18/19 23:19:11 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PRACTICA 02"  [ C:\PRACTICAS\practica 02-pspicefiles\schematic1\practica 02.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .31
+
