@@ -1,0 +1,42 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Sistemas Electrónicos de Interfaz}
+\author{Miguel Angel Xamie Diaz Fuentes}
+
+\begin{document}
+\begin{center}
+\begin{LARGE}
+\textbf{INGENIERÍA MECATRÓNICA}\\
+\end{LARGE}
+Sistemas Eletrónicos De Interfaz\\
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.70]{UPZMG_Mecatr_nica.png}
+\end{figure}
+
+
+\textbf{Alumno}
+\\\textit{Miguel Angel Xamie Diaz Fuentes}
+\textbf{\\Maestro}
+\\\textit{Morán Garabito Carlos Enriquez}
+\textbf{\\Fecha de Entrega}
+\\\textit{24/09/2019}
+\end{center}
+
+\footnote{Universidad Politécnica De La Zona Metropolitana De Guadalajara} 
+
+\pagebreak
+\begin{center}
+\section{Explicar la operación de los circuitos de activación con tiristores en convertidores CA-CD y CA-CA}
+\end{center}
+
+
+\pagebreak
+
+\begin{thebibliography}
+ \\Referencias URL...
+\end{thebibliography}
+
+\end{document}

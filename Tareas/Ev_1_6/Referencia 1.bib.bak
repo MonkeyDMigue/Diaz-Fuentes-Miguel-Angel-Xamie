@@ -1,0 +1,12 @@
+% Encoding: UTF-8
+
+@Electronic{Desconocido2015,
+  author       = {Desconocido},
+  year         = {2015},
+  title        = {Convertidores CA-CD y CA-CA},
+  language     = {Español},
+  howpublished = {Articulo},
+  url          = {https://www.areatecnologia.com/electronica/tiristor.html},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
