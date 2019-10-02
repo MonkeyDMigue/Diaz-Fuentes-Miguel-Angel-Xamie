@@ -1,0 +1,14 @@
+% Encoding: UTF-8
+
+@Electronic{,
+  author       = {RUMSEY, Francis \& McCORMICK, TIm.},
+  year         = {2004},
+  title        = {Sonido y Grabación. Introducción las técnicas sonoras.},
+  language     = {Español},
+  howpublished = {Articulo},
+  organization = {IORTV},
+  url          = {https://es.wikipedia.org/w/index.php?title=Etapa_de_potencia&action=edit&section=28
+https://www.ecured.cu/Amplificador},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
