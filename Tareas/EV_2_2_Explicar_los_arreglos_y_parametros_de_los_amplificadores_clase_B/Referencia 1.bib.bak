@@ -1,0 +1,11 @@
+% Encoding: UTF-8
+
+@Article{,
+  author  = {Boylestad NashelSky},
+  title   = {Electronica teoría de circuitos y dispositivos electrónicos.},
+  journal = {Editorial Perason},
+  volume  = {8va Edición},
+  pages   = {761-769},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
